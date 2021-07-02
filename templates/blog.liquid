@@ -1,0 +1,13 @@
+<!-- Bold: Memberships (blog) -->
+{%- include 'bold_mem_helper' with 'blog' -%}
+<!-- end Bold code -->
+
+<div class="container">
+  <div class="blog-container">
+    {%- section 'blog-template' -%}
+
+    {%- if blog.articles_count > 0 -%}
+      {%- section 'blog-sidebar' -%}
+    {%- endif -%}
+  </div>
+</div>
